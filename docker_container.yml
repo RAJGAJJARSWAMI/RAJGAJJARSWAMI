@@ -7,8 +7,8 @@
      - name: remove stopped container
        shell: docker rm -f assessment	  
      - name: remove docker images
-       shell: docker image rm -f mithi5/assessment
+       shell: docker image rm -f rajgajjar/my-app
        
      - name: create docker image
-       shell: docker run -d --name assessment -p 8090:8080 mithi5/assessment
+       shell: docker run -d --name assessment -p 8090:8080 rajgajjar/my-app
 
