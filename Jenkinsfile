@@ -14,7 +14,7 @@ pipeline {
                         }
         stage ("build the docker image") {
             steps {
-                dir ("/mithi/Assessment") {
+                dir ("/raj") {
                 sh 'docker build -t rajgajjar/my-app .'
 		echo "Hello"
                     }
